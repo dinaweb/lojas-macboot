@@ -1,81 +1,79 @@
 @import url(font-awesome.min.css);
-@import url("http://fonts.googleapis.com/css?family=Raleway:300,700");
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,700&display=swap');
+@font-face {
+    font-family: 'chunkfiveroman';
+    src: url('fonts/chunkfive-webfont.woff2') format('woff2'),
+         url('fonts/chunkfive-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
+body { font-family: 'Josefin Sans', sans-serif; color: #1A1B1F; font-size: 16px; font-weight: 300; line-height: 28px }
+h1, h4 { font-family: chunkfiveroman; }
+select { width: 100%; padding: 10px; background: #4f5620; color: white; }
+.hidden { display: none; }
+.txtcenter { text-align: center; }
+.darkgreen { color: #4f5620 }
+.bg-lightgray { background-color: #ddd; }
+.bg-white { background-color: #fff; }
+.container { width: 100%; max-width: 1140px; margin-right: auto; margin-left: auto; padding: 0; }
+.intro-header {
+    display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #f4f4f4 url(../images/bg-header.jpg) 0px 0px;
+    background-size: cover;
+    color: #fff;
+    height: 440px;
+    margin-bottom: 30px;
+}
+.intro-content { width: 50%; margin: 0px; text-align: center; }
+.heading-logo { margin: 0 auto; }
+.intro-text { width: 80%; margin: 0 auto 35px; }
+.intro-text h1 { margin: 10px 0; font-size: 40px; line-height: 80px; }
+.feature { border: #e3e3e3 1px solid; padding: 2em 2em 0.1em 2em;}
 /*
 	Typify by TEMPLATED
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
 
-/* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-		margin: 0;
-		padding: 0;
-		border: 0;
-		font-size: 100%;
-		font: inherit;
-		vertical-align: baseline;
-	}
 
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-		display: block;
-	}
+/* Reset 
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+		{ margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
+		{ display: block; }
+	body 
+		{ line-height: 1; -webkit-text-size-adjust: none; }
+	ol, ul 
+		{ list-style: none; }
+	blockquote, q 
+		{ quotes: none; }
+	blockquote:before, blockquote:after, q:before, q:after 
+		{ content: ''; content: none; }
+	table 
+		{ border-collapse: collapse; border-spacing: 0; }
 
-	body {
-		line-height: 1;
-	}
+/* Box Model 
+	*, *:before, *:after 
+		{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-	ol, ul {
-		list-style: none;
-	}
-
-	blockquote, q {
-		quotes: none;
-	}
-
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
-
-	table {
-		border-collapse: collapse;
-		border-spacing: 0;
-	}
-
-	body {
-		-webkit-text-size-adjust: none;
-	}
-
-/* Box Model */
-
-	*, *:before, *:after {
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-	}
-
-/* Containers */
-
-	.container {
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.container.\31 25\25 {
-		width: 100%;
-		max-width: 100em;
-		min-width: 80em;
-	}
-
-	.container.\37 5\25 {
-		width: 60em;
-	}
-
-	.container.\35 0\25 {
-		width: 40em;
-	}
+/* Containers 
+	.container 
+		{ margin-left: auto; margin-right: auto; }
+	.container.\31 25\25 
+		{ width: 100%; max-width: 100em; min-width: 80em; }
+	.container.\37 5\25 
+		{ width: 60em; }
+	.container.\35 0\25 
+		{ width: 40em; }
 
 	.container.\32 5\25 {
 		width: 20em;
@@ -215,7 +213,7 @@
 
 	}
 
-/* Grid */
+/* Grid
 
 	.row {
 		border-bottom: solid 1px transparent;
@@ -1548,7 +1546,7 @@
 
 	}
 
-/* Basic */
+/* Basic
 
 	@-ms-viewport {
 		width: device-width;
@@ -1581,7 +1579,7 @@
 			transition: none !important;
 		}
 
-/* Type */
+/* Type
 
 	body {
 		background-color: #fff;
@@ -1786,7 +1784,7 @@
 		border-bottom-color: #e3e3e3;
 	}
 
-/* Box */
+/* Box
 
 	.box {
 		border-radius: 0;
@@ -1811,7 +1809,7 @@
 		border-color: #e3e3e3;
 	}
 
-/* Button */
+/* Button
 
 	input[type="submit"],
 	input[type="reset"],
@@ -1993,7 +1991,7 @@
 				background-color: #00b4b5;
 			}
 
-/* Form */
+/* Form
 
 	form {
 		margin: 0 0 2em 0;
@@ -2269,7 +2267,7 @@
 		color: #bbb !important;
 	}
 
-/* Icon */
+/* Icon
 
 	.icon {
 		text-decoration: none;
@@ -2290,7 +2288,7 @@
 			display: none;
 		}
 
-/* Image */
+/* Image
 
 	.image {
 		border-radius: 0;
@@ -2344,7 +2342,7 @@
 				width: 100%;
 			}
 
-/* List */
+/* List
 
 	ol {
 		list-style: decimal;
@@ -2521,7 +2519,7 @@
 		border-top-color: #e3e3e3;
 	}
 
-/* Section/Article */
+/* Section/Article
 
 	section.special, article.special, header.special {
 		text-align: center;
@@ -2598,7 +2596,7 @@
 		color: #bbb;
 	}
 
-/* Table */
+/* Table
 
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
@@ -2685,7 +2683,7 @@
 		border-color: #e3e3e3;
 	}
 
-/* Feature */
+/* Feature
 
 	.features {
 		display: -moz-flex;
@@ -2751,7 +2749,7 @@
 			color: #00cdcf;
 		}
 
-/* Wrapper */
+/* Wrapper
 
 	.wrapper {
 		padding: 6em 0 4em 0;
@@ -3507,7 +3505,7 @@
 
 		}
 
-/* Banner */
+/* Banner
 
 	#banner {
 		background-color: #00cdcf;
@@ -3706,7 +3704,7 @@
 
 		}
 
-/* Main */
+/* Main
 
 	#main {
 		padding: 4em 0 2em 0;
@@ -3720,7 +3718,7 @@
 
 		}
 
-/* Footer */
+/* Footer
 
 	#footer {
 		background-color: #f7f7f7;
