@@ -8,14 +8,19 @@
     font-style: normal;
 
 }
-body { font-family: 'Josefin Sans', sans-serif; color: #1A1B1F; font-size: 16px; font-weight: 300; line-height: 28px }
+body { font-family: 'Josefin Sans', sans-serif; color: #1A1B1F; font-size: 40px; font-weight: 300; line-height: 60px }
 h1, h4 { font-family: chunkfiveroman; }
-select { width: 100%; padding: 10px; background: #4f5620; color: white; }
+h1 { font-size: 55px }
+h4 { font-size: 45px }
+select { width: 100%; padding: 35px; background: #4f5620; color: white; }
+footer { padding: 20px; margin-top: 50px; }
 .hidden { display: none; }
 .txtcenter { text-align: center; }
 .darkgreen { color: #4f5620 }
+.white { color: white; }
 .bg-lightgray { background-color: #ddd; }
 .bg-white { background-color: #fff; }
+.bg-darkgreen { background: #4f5620; }
 .container { width: 100%; max-width: 1140px; margin-right: auto; margin-left: auto; padding: 0; }
 .intro-header {
     display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;
@@ -30,14 +35,29 @@ select { width: 100%; padding: 10px; background: #4f5620; color: white; }
     background: #f4f4f4 url(../images/bg-header.jpg) 0px 0px;
     background-size: cover;
     color: #fff;
-    height: 440px;
+    height: 670px;
     margin-bottom: 30px;
+    background-position-x: right;
 }
-.intro-content { width: 50%; margin: 0px; text-align: center; }
+.intro-content { width: 100%; margin: 0px; text-align: center; padding-right: 160px;}
 .heading-logo { margin: 0 auto; }
 .intro-text { width: 80%; margin: 0 auto 35px; }
-.intro-text h1 { margin: 10px 0; font-size: 40px; line-height: 80px; }
+.intro-text h1 { margin: 10px 0; font-size: 70px; line-height: 100px; }
 .feature { border: #e3e3e3 1px solid; padding: 2em 2em 0.1em 2em;}
+.hidemobile { display: none; }
+.stores { height: auto; }
+
+@media only screen and (min-width: 768px) {
+	body { font-size: 16px; line-height: 28px }
+	h1 { font-size: 36px }
+	h4 { font-size: 20px }
+	select { padding: 10px; }
+	.intro-header { height: 440px; }
+	.intro-content { width: 50%; padding-right: 0; }
+	.intro-text h1 { font-size: 40px; line-height: 80px; }
+	.hidemobile { display: block; }
+	.stores { overflow-y: scroll; height:400px;  }
+}
 /*
 	Typify by TEMPLATED
 	templated.co @templatedco
