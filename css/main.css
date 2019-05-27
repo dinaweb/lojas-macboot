@@ -47,7 +47,7 @@ footer { padding: 20px; margin-top: 50px; }
 .hidemobile { display: none; }
 .stores { height: auto; }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 990px) {
 	body { font-size: 16px; line-height: 28px }
 	h1 { font-size: 36px }
 	h4 { font-size: 20px }
