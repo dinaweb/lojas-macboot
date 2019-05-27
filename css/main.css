@@ -12,7 +12,8 @@ body { font-family: 'Josefin Sans', sans-serif; color: #1A1B1F; font-size: 40px;
 h1, h4 { font-family: chunkfiveroman; }
 h1 { font-size: 55px }
 h4 { font-size: 45px }
-select { width: 100%; padding: 35px; background: #4f5620; color: white; }
+select { width: 100%; padding: 35px; background: #4f5620; color: white; margin-bottom: 50px }
+hr { border-top-width: 16px; }
 footer { padding: 20px; margin-top: 50px; }
 .hidden { display: none; }
 .txtcenter { text-align: center; }
@@ -45,18 +46,19 @@ footer { padding: 20px; margin-top: 50px; }
 .intro-text h1 { margin: 10px 0; font-size: 70px; line-height: 100px; }
 .feature { border: #e3e3e3 1px solid; padding: 2em 2em 0.1em 2em;}
 .hidemobile { display: none; }
-.stores { height: auto; }
+/*.stores { height: auto; }*/
 
 @media (min-width: 990px) {
 	body { font-size: 16px; line-height: 28px }
 	h1 { font-size: 36px }
 	h4 { font-size: 20px }
-	select { padding: 10px; }
+	select { padding: 10px; margin-bottom: 20px }
+	hr { border-top-width: 8px }
 	.intro-header { height: 440px; }
 	.intro-content { width: 50%; padding-right: 0; }
 	.intro-text h1 { font-size: 40px; line-height: 80px; }
 	.hidemobile { display: block; }
-	.stores { overflow-y: scroll; height:400px;  }
+	/*.stores { overflow-y: scroll; height:400px;  }*/
 }
 /*
 	Typify by TEMPLATED
