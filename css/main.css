@@ -46,6 +46,7 @@ footer { padding: 20px; margin-top: 50px; }
 .intro-text h1 { margin: 10px 0; font-size: 70px; line-height: 100px; }
 .feature { border: #e3e3e3 1px solid; padding: 2em 2em 0.1em 2em;}
 .hidemobile { display: none; }
+.stores h4 { margin-top: 30px }
 /*.stores { height: auto; }*/
 
 @media (min-width: 990px) {
@@ -56,6 +57,7 @@ footer { padding: 20px; margin-top: 50px; }
 	hr { border-top-width: 8px }
 	.intro-header { height: 440px; }
 	.intro-content { width: 50%; padding-right: 0; }
+	.heading-logo { margin: 0 auto; width: 200px }
 	.intro-text h1 { font-size: 40px; line-height: 80px; }
 	.hidemobile { display: block; }
 	/*.stores { overflow-y: scroll; height:400px;  }*/
