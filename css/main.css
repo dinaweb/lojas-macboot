@@ -40,7 +40,7 @@ footer { padding: 20px; margin-top: 50px; }
     margin-bottom: 30px;
     background-position-x: right;
 }
-.intro-content { width: 100%; margin: 0px; text-align: center; padding-right: 160px;}
+.intro-content { width: 100%; margin: 0px; text-align: center; }
 .heading-logo { margin: 0 auto; }
 .intro-text { width: 80%; margin: 0 auto 35px; }
 .intro-text h1 { margin: 10px 0; font-size: 70px; line-height: 100px; }
