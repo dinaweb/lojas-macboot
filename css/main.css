@@ -12,9 +12,20 @@ body { font-family: 'Josefin Sans', sans-serif; color: #1A1B1F; font-size: 40px;
 h1, h4 { font-family: chunkfiveroman; }
 h1 { font-size: 55px }
 h4 { font-size: 45px }
-select { width: 100%; padding: 35px; background: #4f5620; color: white; margin-bottom: 50px }
+select { 
+	width: 100%; 
+	padding: 35px; 
+	background: #4f5620; 
+	color: white; 
+	margin-bottom: 50px;
+	background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 50px) calc(1em + 15px), calc(100% - 35px) calc(1em + 15px), calc(100% - 2.5em) 0.5em;
+    background-size: 15px 15px, 15px 15px, 1px 2em;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+}
 hr { border-top-width: 16px; }
-footer { padding: 20px; margin-top: 50px; }
+footer { padding: 100px 20px; margin-top: 50px; }
 .hidden { display: none; }
 .txtcenter { text-align: center; }
 .darkgreen { color: #4f5620 }
@@ -53,7 +64,7 @@ footer { padding: 20px; margin-top: 50px; }
 	body { font-size: 16px; line-height: 28px }
 	h1 { font-size: 36px }
 	h4 { font-size: 20px }
-	select { padding: 10px; margin-bottom: 20px }
+	select { padding: 10px; margin-bottom: 20px; background-image: none; -webkit-appearance: menulist; }
 	hr { border-top-width: 8px }
 	.intro-header { height: 440px; }
 	.intro-content { width: 50%; padding-right: 0; }
